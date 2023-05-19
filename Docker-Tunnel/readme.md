@@ -15,7 +15,7 @@ docker run --name tunnel-proxy --env PORTS="80:3000,443:3001" -itd --net=host OP
 
 سپس، در دستگاه توسعه دهنده خود، اجرا کنید:
 ```
-docker run --name tunnel-app --env PORTS="80:3000,443:3001" --env PROXY_HOST="1.2.3.4" --env PROXY_SSH_PORT="22" --env PROXY_SSH_USER="${USER} " -v "${HOME}/.ssh/id_rsa:/ssh.key" -itd vitobotta/docker-tunnel:0.31.0 app
+docker run --name tunnel-app --env PORTS="80:3000,443:3001" --env PROXY_HOST="1.2.3.4" --env PROXY_SSH_PORT="22" --env PROXY_SSH_USER="${USER} " -v "${HOME}/.ssh/id_rsa:/ssh.key" -itd OPIran-CluB/Tunnels-port-forwarding-command:0.31.0 app
 ```
 یک آرگومان اختیاری APP_IP وجود دارد که به صورت پیش‌فرض روی IP میزبان Docker است، اما اگر درخواست‌ها باید به یک IP خاص ارسال شوند، می‌توان آن را پیکربندی کرد.
 
