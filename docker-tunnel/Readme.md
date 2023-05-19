@@ -1,3 +1,13 @@
+# پیش نیاز
+### ubuntu (root)
+```
+apt install docker.io -y && install nginx -y
+```
+### Centos (root)
+```
+yum install docker.io -y && install nginx -y
+```
+
 
 # استفاده
 
