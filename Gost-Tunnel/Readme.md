@@ -1,13 +1,18 @@
-## Installing Section 1st way
+## Installing Gost version 3 - Method A
 ```
 apt install golang-go && install gccgo-go && git clone https://github.com/go-gost/gost.git && cd gost/cmd/gost && go build
 ```
-=========================================
-## Installing Section 2nd way
+-----------------------------------------------------------------------------------------------------------------
+## Installing Gost version 3 - Method B
 ```
 apt install wget -y && wget https://github.com/go-gost/gost/releases/download/v3.0.0-rc6/gost_3.0.0-rc6_linux_amd64.tar.gz && mkdir /usr/local/bin/gost && tar -xvzf gost_3.0.0-rc6_linux_amd64.tar.gz -C /usr/local/bin/gost/ && chmod +x /usr/local/bin/gost/
 ```
-=========================================
+-----------------------------------------------------------------------------------------------------------------
+## Installing Gost version 3 - Method C Docker
+```
+docker run --rm gogost/gost -V
+```
+-----------------------------------------------------------------------------------------------------------------
 ## Configure Gost Service
 ```
 nano /usr/lib/systemd/system/gost.service
@@ -86,6 +91,8 @@ systemctl restart gost
 ```
 -L relay+kcp://:7079
 ```
+
+## I recommend you use kcp. kcp protocal is based on udp. kcp can speed up your connection and keep your connection secure.
 ==================================================
 ### Source
  
