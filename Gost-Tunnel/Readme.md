@@ -89,5 +89,6 @@ systemctl restart gost
 ==================================================
 ### Source
  
-https://gost.run/en/
-https://github.com/woodlyer/gostExample
+A) https://gost.run/en/
+
+B) https://github.com/woodlyer/gostExample
